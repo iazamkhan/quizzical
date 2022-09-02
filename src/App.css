@@ -1,3 +1,8 @@
+body {
+  margin: 0;
+  background-color: #faedcd
+}
+
 .App {
   text-align: center;
 }
@@ -26,6 +31,10 @@
 
 .App-link {
   color: #61dafb;
+}
+
+.btn-filled {
+  text-decoration: underline;
 }
 
 @keyframes App-logo-spin {

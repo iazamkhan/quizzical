@@ -1,8 +1,10 @@
 import React, { useEffect, useState } from 'react'
 import { Box, Stack, Typography, Button, CircularProgress } from '@mui/material'
+import { Link } from 'react-router-dom'
 import '../App.css';
+import Header from './Header';
 
-const QuizPage = () => {
+const QuizPage = ({name, setName}) => {
 
 
 
@@ -27,13 +29,13 @@ const QuizPage = () => {
 
 
     return (
+        <>
+        <Link to="/" style={{textDecoration:'none'}}>
+            <Header />
+        </Link>
         <Box sx={{ alignItems: 'center', textAlign: 'center' }}>
-            <Typography variant="h3">
-                Quiz Page
-            </Typography>
-            <hr />
 
-            {questionsData ? (
+            {questionsData.length  ? (
                 questionsData.map((item) => {
                     return (
                         <>
@@ -56,6 +58,7 @@ const QuizPage = () => {
             }
 
         </Box>
+        </>
     )
 }
 

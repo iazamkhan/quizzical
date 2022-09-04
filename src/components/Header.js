@@ -12,7 +12,7 @@ const Header = ({name}) => {
             </Typography>
             <img src={logo} className="header-logo" alt="app-logo" style={{width: '4%', height: '4%', marginBottom: '10px'}} />
         </Box>
-        <h3>Welcome {name}</h3>
+        <Typography variant="h6" sx={{ display: 'block', textAlign: 'center', color: '#000'}}>Welcome {name}</Typography>
         <hr />
         </>
     )

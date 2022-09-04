@@ -13,7 +13,7 @@ const Home = ({name, setName}) => {
     const navigate = useNavigate()
 
     const handleClick = () => {
-        if(!name) {
+        if(!name || name.length < 3) {
             setError(true)
         }
         else {
